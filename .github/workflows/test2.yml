@@ -1,0 +1,9 @@
+name: Github Actions Test2
+on: [push]
+jobs: 
+  Test2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{github.action}}"
+      - run: echo "${{github.ref}}"
+      - run: echo "${{github.repository}}"
